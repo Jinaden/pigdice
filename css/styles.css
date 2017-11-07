@@ -1,0 +1,29 @@
+#heading {
+  text-align: center;
+}
+
+.game {
+  background-color: #829356;
+  color: #093145;
+  width: 1230px;
+  height: 1000px;
+}
+
+button#player {
+  background-color: #efd469;
+  height: 67px;
+  width: 124px;
+}
+
+#player:hover {
+  background-color: #C02F1D;
+  color: white;
+}
+
+.rules {
+  background-color: #0C374D;
+  color: #fff;
+  height: 1000px;
+  text-align: justify;
+  padding: 23px;
+}
