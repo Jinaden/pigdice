@@ -27,3 +27,31 @@ button#player {
   text-align: justify;
   padding: 23px;
 }
+.rules h2 {
+  color: #efd469;
+}
+
+.col-md-8 {
+  margin-left: -15px;
+  padding: 0;
+}
+
+#display {
+  padding-top: 150px;
+  padding-left: 175px;
+}
+
+#setup {
+  padding-left: 300px;
+  padding-top: 35px;
+}
+
+#player1-roll {
+  padding-left: 500px;
+  padding-top: 75px;
+}
+
+#player2-roll {
+  padding-left: 500px;
+  padding-top: 75px;
+}
