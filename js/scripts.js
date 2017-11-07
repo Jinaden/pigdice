@@ -113,3 +113,13 @@ $(document).ready(function() {
     }
   });
 })
+//Business Logic
+var players = [];
+
+function Player(name) {
+  this.playerName = name;
+  this.rollScore = [];
+  this.total = 0;
+}
+
+var holdNum = [];
