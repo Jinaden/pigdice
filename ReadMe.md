@@ -1,4 +1,4 @@
-# Anita's Kitchen website.
+# Pig Dice game website
 
 #### By **James Nyamweya**
 
