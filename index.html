@@ -1,16 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300|Vollkorn|Nobile" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <title></title>
+</head>
 </head>
 
 <body>
+  <div class="row">
 
+    <div class="col-md-4">
+      <div class="rules">
+
+        <h2>Gameplay</h2>
+        <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":
+          <ul>
+            <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+            <li>If the player rolls any other number, it is added to their turn total and the player's turn continues. </li>
+            <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
+          </ul>
+        </p>
+        <p>The first player to score 100 or more points wins.</p>
+        <h2>History of the game</h2>
+        <p>
+          Pig is a simple dice game first described in print by John Scarne in 1945.As with many games of folk origin, Pig is played with many rule variations. Commercial variants of Pig include Pass the Pigs, Pig Dice,and Skunk. Pig is commonly used by mathematics
+          teachers to teach probability concepts.
+        </p>
+        <p>
+          Pig is one of a family of dice games described as "jeopardy dice games". For jeopardy dice games, the dominant type of decision is whether or not to jeopardize previous gains by rolling for potential greater gains. Most jeopardy dice games can be further
+          subdivided into two categories: jeopardy race games and jeopardy approach games.
+        </p>
+        <p>
+          In jeopardy race games, the object is to be the first to meet or exceed a goal score (e.g. Pig, Pass the Pigs, Cosmic Wimpout, Can't Stop). In jeopardy approach games, the object is to most closely approach a goal score without exceeding it.
+        </p>
+        <p>Source:The wonderful people at Wikipedia</p>
+      </div>
+    </div>
+
+    <div class="col-md-8">
+      <div class="game">
+        <div class="container">
+          <h1 id="heading">Pig Dice </h1>
+          <div class="row">
+
+            <!--form to collect the players names-->
+            <div id="setup">
+              <div class="row">
+                <div class="col-md-4">
+                  <form id="players">
+                    <div class="form-group">
+                      <label for="player1">Your Name</label>
+                      <input type="text" class="form-control" id="player1" placeholder="Player 1">
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-4">
+                  <form id="players">
+                    <div class="form-group">
+                      <label for="player2">Your Name</label>
+                      <input type="text" class="form-control" id="player2" placeholder="Player 2">
+                    </div>
+                </div>
+                <button class="btn " id="player" type="submit">Start Game</button>
+                </form>
+              </div>
+            </div>
+            <!-- </div> -->
+            <div class="col-md-6" id="roll">
+              <div class="col-md-3" id="player1-roll">
+                <h3 id="player1"></h3>
+                <div class="row">
+                  <button class="btn " id="die1">Roll</button>
+                  <button class="btn " id="hold1">Hold</button>
+                </div>
+              </div>
+              <div class="col-md-3" id="player2-roll">
+                <h3 id="player2"></h3>
+                <button class="btn " id="die2">Roll</button>
+                <button class="btn " id="hold2">Hold</button>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="display">
+            <div class="col-md-4">
+              <div class="display">
+                <h1><strong>Score 1</strong></h1>
+                <h2 class="score" id="score1">0</h2>
+              </div>
+            </div>
+            <div class="col" id="die-count1">
+              <h3>Die</h3>
+              <h2 id="die-count">0</h2>
+            </div>
+            <div class="col-md-4">
+              <div class="display">
+                <h1><strong>Score 2</strong></h1>
+                <h2 class="score" id="score2">0</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end of the container-->
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
